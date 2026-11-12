@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bazira Corporation | Android Apps</title>
-<meta name="description" content="Bazira Corporation creates practical Android apps for everyday life and small business. Browse our apps, install from Google Play or download the APK.">
+<title>Dastgeer LPG Auto Filling Station | Android Apps</title>
+<meta name="description" content="DASTGEER LPG AUTO FILLING STATION (PRIVATE) LIMITED offers simple Android apps for daily station work. Browse the apps, install from Google Play or download the APK.">
 <meta name="theme-color" content="#0F7A4F">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Bazira Corporation | Android Apps">
-<meta property="og:description" content="Practical Android apps for everyday life. Install from Google Play or download the APK.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230F7A4F'/%3E%3Cpath d='M11 8v16M11 8h5.5a4 4 0 0 1 0 8H11M11 16h6.5a4 4 0 0 1 0 8H11' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+<meta property="og:title" content="Dastgeer LPG Auto Filling Station | Android Apps">
+<meta property="og:description" content="Simple Android apps for daily station work. Install from Google Play or download the APK.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230F7A4F'/%3E%3Cpath d='M10 8v16M10 8h4.5a8 8 0 0 1 0 16H10' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
 /* Theme is set before first paint so the page never flashes the wrong colours. */
 (function () {
   var t = null;
-  try { t = localStorage.getItem("bazira-theme"); } catch (e) {}
+  try { t = localStorage.getItem("dastgeer-theme"); } catch (e) {}
   if (!t) t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   document.documentElement.dataset.theme = t;
 })();
@@ -226,8 +226,8 @@ dialog[open]{animation:sheetIn .28s cubic-bezier(.2,.8,.2,1)}
    ===================================================================== */
 
 const CONFIG = {
-  company: "Bazira Corporation",
-  email: "info@bazira.online",       // CHANGE THIS to your real email. Shown on the page and used by the contact form
+  company: "DASTGEER LPG AUTO FILLING STATION (PRIVATE) LIMITED",
+  email: "info@dastgeerlpg.com",     // CHANGE THIS to your real email. Shown on the page and used by the contact form
   phone: "+92 300 1234567",          // leave "" to hide
   whatsapp: "923001234567",          // country code + number, no + or spaces. "" to hide
   address: "Pakistan",               // leave "" to hide
@@ -247,13 +247,13 @@ const CONFIG = {
 
 const APPS = [
   {
-    id: "expense-tracker",
-    name: "Expense Tracker",
-    tagline: "Track daily spending in rupees",
+    id: "station-expense-book",
+    name: "Station Expense Book",
+    tagline: "Track station expenses in rupees",
     category: "Finance",
     icon: "💰",
     color: "#1F8A5B",
-    description: "Add your daily expenses in seconds, group them by category and see where your money goes each month. Everything is stored on your phone, so it works offline.",
+    description: "Record daily station expenses such as salaries, electricity, maintenance and supplies in seconds, group them by category and see where the money goes each month. Everything is stored on your phone, so it works offline.",
     features: ["Quick add for daily expenses", "Monthly summary by category", "Works fully offline", "Simple, easy-to-read screens"],
     version: "1.0.0",
     size: "6 MB",
@@ -267,14 +267,14 @@ const APPS = [
     privacy: ""
   },
   {
-    id: "daily-diary",
-    name: "Daily Diary",
-    tagline: "A private place for your thoughts",
-    category: "Lifestyle",
+    id: "shift-diary",
+    name: "Shift Diary",
+    tagline: "Notes and records for every shift",
+    category: "Operations",
     icon: "📔",
     color: "#7C4DDB",
-    description: "Write down your day, add the mood and search old entries whenever you like. Your entries stay on your device.",
-    features: ["Entries by date", "Mood tags", "Search old entries", "Optional app lock"],
+    description: "Write down what happened in each shift, add tags such as stock, maintenance or customer issues, and search old entries whenever you need them. Your entries stay on your device.",
+    features: ["Entries by date and shift", "Tags for quick sorting", "Search old entries", "Optional app lock"],
     version: "1.2.0",
     size: "8 MB",
     updated: "2026-10-12",
@@ -285,14 +285,14 @@ const APPS = [
     privacy: ""
   },
   {
-    id: "tailor-book",
-    name: "Tailor Book",
-    tagline: "Measurements and orders in one place",
+    id: "lpg-sales-ledger",
+    name: "LPG Sales Ledger",
+    tagline: "Daily sales and customer credit in one place",
     category: "Business",
-    icon: "✂️",
+    icon: "⛽",
     color: "#E0702B",
-    description: "Keep every customer's measurements and orders together, with delivery dates and payment status, so nothing gets lost in a paper register.",
-    features: ["Customer measurement cards", "Order and delivery tracking", "Payment status", "Backup to your phone"],
+    description: "Keep daily LPG sales and every customer's credit (udhaar) together, with payment status and dates, so nothing gets lost in a paper register.",
+    features: ["Daily sales entry", "Customer credit tracking", "Payment status", "Backup to your phone"],
     version: "0.9.0",
     size: "7 MB",
     updated: "2026-10-24",
@@ -311,9 +311,9 @@ const APPS = [
 
 <header class="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="#top" aria-label="Bazira Corporation home">
-      <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--accent)"/><path d="M11 8v16M11 8h5.5a4 4 0 0 1 0 8H11M11 16h6.5a4 4 0 0 1 0 8H11" stroke="var(--accent-ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-      <span>Bazira Corporation</span>
+    <a class="brand" href="#top" aria-label="Dastgeer LPG Auto Filling Station home">
+      <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--accent)"/><path d="M10 8v16M10 8h4.5a8 8 0 0 1 0 16H10" stroke="var(--accent-ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      <span>Dastgeer LPG</span>
     </a>
     <nav class="links" id="links" aria-label="Main">
       <a href="#apps">Apps</a>
@@ -337,8 +337,8 @@ const APPS = [
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <h1>Practical apps for everyday life.</h1>
-        <p class="lead">Bazira Corporation creates easy-to-use Android apps that stay light on your phone. Choose an app below, then get it from Google Play or download the APK directly.</p>
+        <h1>Simple apps for daily station work.</h1>
+        <p class="lead">Dastgeer LPG Auto Filling Station offers easy-to-use Android apps for expenses, shift records and sales. Choose an app below, then get it from Google Play or download the APK directly.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#apps">Explore apps</a>
           <a class="btn btn-ghost" href="#contact">Talk to us</a>
@@ -386,8 +386,8 @@ const APPS = [
   <section class="section about" id="about">
     <div class="wrap about-grid">
       <div>
-        <h2>Built for real needs, made simple</h2>
-        <p>Bazira Corporation develops Android apps for everyday people and small businesses in Pakistan. Each app focuses on one clear job, opens fast and runs smoothly even on budget phones. We keep listening to feedback and keep improving after launch.</p>
+        <h2>Built for real station needs</h2>
+        <p>DASTGEER LPG AUTO FILLING STATION (PRIVATE) LIMITED provides Android apps that make daily work at a filling station easier. Each app focuses on one clear job, opens fast and runs smoothly even on budget phones. We keep listening to feedback and keep improving after launch.</p>
       </div>
       <dl class="points">
         <div><dt>Simple by design</dt><dd>Clean screens and clear steps, so anyone can start using an app within a minute.</dd></div>
@@ -401,7 +401,7 @@ const APPS = [
     <div class="wrap contact-grid">
       <div>
         <h2>Let's talk</h2>
-        <p>Have a question, an idea or a bug to report? Send us a message and the Bazira team will get back to you as soon as possible.</p>
+        <p>Have a question, an idea or a bug to report? Send us a message and the Dastgeer LPG team will get back to you as soon as possible.</p>
         <ul class="contact-list" id="contactList"></ul>
       </div>
       <form class="form" id="contactForm">
@@ -421,7 +421,7 @@ const APPS = [
         <p class="stamp">Last updated: 26 October 2026</p>
 
         <h3>About this policy</h3>
-        <p>This policy explains how Bazira Corporation ("we", "us") handles information in our Android apps and on this website.</p>
+        <p>This policy explains how DASTGEER LPG AUTO FILLING STATION (PRIVATE) LIMITED ("we", "us") handles information in our Android apps and on this website.</p>
 
         <h3>Information we collect</h3>
         <p>Most of our apps do not need an account. Data you enter in an app, such as notes, expenses or measurements, stays on your device unless the app clearly offers a backup or sync feature that you choose to use.</p>
@@ -454,7 +454,7 @@ const APPS = [
 
 <footer class="footer">
   <div class="wrap footer-in">
-    <span>&copy; <span id="year"></span> Bazira Corporation. All rights reserved.</span>
+    <span>&copy; <span id="year"></span> DASTGEER LPG AUTO FILLING STATION (PRIVATE) LIMITED. All rights reserved.</span>
     <span>Android and Google Play are trademarks of Google LLC. <a href="#privacy">Privacy policy</a></span>
   </div>
 </footer>
@@ -688,7 +688,7 @@ const APPS = [
   $("#themeBtn").addEventListener("click", function () {
     var next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = next;
-    try { localStorage.setItem("bazira-theme", next); } catch (err) {}
+    try { localStorage.setItem("dastgeer-theme", next); } catch (err) {}
   });
 
   var menuBtn = $("#menuBtn"), links = $("#links");
